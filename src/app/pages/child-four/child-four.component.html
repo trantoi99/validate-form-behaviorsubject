@@ -1,0 +1,17 @@
+<form #f="ngForm" (ngSubmit)="submit(f)">
+  <mat-form-field class="example-full-width">
+    <mat-label>Four</mat-label>
+    <input
+      type="text"
+      matInput
+      placeholder="aaa"
+      [(ngModel)]="four"
+      required="true"
+      name="four"
+    />
+  </mat-form-field>
+
+  <button type="submit" [hidden]="true"  hidden #button>
+    Primary
+  </button>
+</form>
