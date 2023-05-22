@@ -58,7 +58,7 @@ export class ValidateFormService {
     
    resetValidate(){
     this.objFormValidate.forEach((item: any) => {
-      item.value = false;
+      item.value = true;
     })
    }
 }
