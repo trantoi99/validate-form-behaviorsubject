@@ -55,4 +55,10 @@ export class ValidateFormService {
       this.checkForm.next(ValidateType.Invalid)
     }
   }
+    
+   resetValidate(){
+    this.objFormValidate.forEach((item: any) => {
+      item.value = false;
+    })
+   }
 }
